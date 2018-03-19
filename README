@@ -1,0 +1,6 @@
+Created by: Ramesh "Meshugah" Balakrishnan
+Created on: March 19, 2018
+Created at: Argonne National Laboratory
+
+Legend: the purpose of this meshugah "branch" in the thickAsABrick/Nek5000 "fork" is to try out (and create) some crazy 
+        wall modeling capabilities for high-Re flows involving "very" large eddy (did I say crazy) simulations.
