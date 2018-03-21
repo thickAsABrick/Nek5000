@@ -4,11 +4,18 @@
 #-------------------------------------------------------------------------------
 
 # source path 
+NEK5000_HOME=$(pwd)
+echo $NEK5000_HOME
 #SOURCE_ROOT="$HOME/Nek5000" 
+SOURCE_ROOT=$NEK5000_HOME"/../" 
+echo $SOURCE_ROOT
 
 # Fortran/C compiler
-#FC="mpif77"
-#CC="mpicc"
+#ifndef MIRA
+#define MIRA
+  FC="mpixlf77"
+  CC="mpixlc"
+#endif
 
 # pre-processor list (set to "?" to get a list of available symbols)
 #PPLIST="?" 
