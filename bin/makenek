@@ -5,17 +5,16 @@
 
 # source path 
 NEK5000_HOME=$(pwd)
-echo $NEK5000_HOME
 #SOURCE_ROOT="$HOME/Nek5000" 
 SOURCE_ROOT=$NEK5000_HOME"/../" 
-echo $SOURCE_ROOT
 
 # Fortran/C compiler
-#ifndef MIRA
-#define MIRA
+if [ $HOSTNAME == "vestalac1" ] || [ $HOSTNAME == "vestalac2" ] || [ $HOSTNAME == "vestalac3" ] || [ $HOSTNAME == "vestalac4" ]
+then
+  echo "We are compiling on the IBM Blue Gene Q (Vesta)"
   FC="mpixlf77"
   CC="mpixlc"
-#endif
+fi
 
 # pre-processor list (set to "?" to get a list of available symbols)
 #PPLIST="?" 
