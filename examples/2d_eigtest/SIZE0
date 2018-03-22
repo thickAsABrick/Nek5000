@@ -1,0 +1,2 @@
+      integer lx0
+      parameter (lx0 = 16 )
